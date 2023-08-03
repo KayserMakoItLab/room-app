@@ -12,7 +12,7 @@ const Room = () => {
 
     useEffect(() => {
       if (modelRef.current) {
-        // modelRef.current.castShadow = true;
+        modelRef.current.castShadow = true;
         modelRef.current.receiveShadow = true;
         modelRef.current?.children.map((node) => {
           if (node.isMesh || node.isObject3D) {
@@ -21,7 +21,7 @@ const Room = () => {
           } else {
             node?.children.map((node) => {
               if (node?.isMesh) {
-                // node.castShadow = true;
+                node.castShadow = true;
                 node.receiveShadow = true;
               }
             });
