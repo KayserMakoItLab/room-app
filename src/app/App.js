@@ -1,9 +1,8 @@
 'use client'
-import { Environment, Lightformer, Loader, OrbitControls } from "@react-three/drei";
-import { Canvas, useThree } from "@react-three/fiber";
+import { Environment, Loader, OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import Room from "./Room";
-import { Suspense, useEffect } from "react";
-import { RectAreaLight } from "three";
+import { Suspense } from "react";
 
 const App = () => {
 
